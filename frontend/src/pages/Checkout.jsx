@@ -72,9 +72,7 @@ function Checkout({ goBack }) {
     try {
       setIsSubmitting(true);
 
-      const response = await fetch(
-        "http://127.0.0.1:8000/orders",
-        {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/orders`, {
           method: "POST",
 
           headers: {

@@ -7,7 +7,7 @@ function AdminOrders({ goBack }) {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/orders")
+   fetch(`${import.meta.env.VITE_API_URL}/orders`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to load orders");
