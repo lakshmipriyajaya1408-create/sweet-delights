@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Caveat:wght@600&family=Work+Sans:wght@400;500;600&display=swap");
+
+
+.sd-scope {
+  --rose: #e0518c;
+  --rose-dark: #c23b72;
+  --blush: #fdf1f6;
+  --ink: #2b2320;
+  --ink-soft: #6b5b54;
+
+  font-family: "Work Sans", sans-serif;
+  color: var(--ink);
+}
+
+
+/* =========================
+   TAG
+========================= */
+
+.sd-scope .tag {
+  font-family: "Fraunces", serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--rose-dark);
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-bottom: 1rem;
+}
+
+
+.sd-scope .tag::before {
+  content: "";
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+  background: var(--rose);
+
+  display: inline-block;
+}
+
+
+/* =========================
+   SCRIPT TEXT
+========================= */
+
+.sd-scope .script {
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+
+  color: var(--rose);
+
+  font-size: 1.2em;
+
+  display: block;
+
+  line-height: 1.2;
+
+  margin-top: 0.3rem;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+  background: #ffffff;
+
+  padding: 6rem 8vw;
+}
+
+
+.about-wrapper {
+  display: grid;
+
+  grid-template-columns: 0.85fr 1.15fr;
+
+  gap: 4.5rem;
+
+  max-width: 1160px;
+
+  margin: 0 auto;
+
+  align-items: start;
+}
+
+
+.about-left h2 {
+  font-family: "Fraunces", serif;
+
+  font-weight: 600;
+
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+
+  line-height: 1.15;
+
+  margin: 0;
+
+  color: var(--ink);
+}
+
+
+.about-right p {
+  font-size: 1.02rem;
+
+  line-height: 1.75;
+
+  color: var(--ink-soft);
+
+  max-width: 46ch;
+
+  margin: 0 0 1.1rem;
+}
+
+
+/* ABOUT HIGHLIGHTS */
+
+.about-highlights {
+  display: flex;
+
+  margin-top: 2.5rem;
+
+  border-top: 1px solid var(--blush);
+
+  padding-top: 1.5rem;
+}
+
+
+.about-highlights > div {
+  flex: 1;
+
+  padding-right: 1.5rem;
+
+  border-right: 1px solid var(--blush);
+}
+
+
+.about-highlights > div:last-child {
+  border-right: none;
+}
+
+
+.about-highlights strong {
+  font-family: "Fraunces", serif;
+
+  font-weight: 600;
+
+  display: block;
+
+  font-size: 1.15rem;
+
+  margin-bottom: 0.3rem;
+
+  color: var(--rose-dark);
+}
+
+
+.about-highlights span {
+  font-size: 0.88rem;
+
+  color: var(--ink-soft);
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+  background: var(--blush);
+
+  padding: 6rem 8vw;
+}
+
+
+.contact-wrapper {
+  display: grid;
+
+  grid-template-columns: 1fr 0.9fr;
+
+  gap: 4rem;
+
+  max-width: 1160px;
+
+  margin: 0 auto;
+
+  align-items: center;
+}
+
+
+.contact-text h2 {
+  font-family: "Fraunces", serif;
+
+  font-weight: 600;
+
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+
+  line-height: 1.15;
+
+  color: var(--ink);
+
+  margin: 0 0 1.25rem;
+}
+
+
+.contact-text > p {
+  font-size: 1.02rem;
+
+  line-height: 1.7;
+
+  color: var(--ink-soft);
+
+  max-width: 42ch;
+
+  margin: 0;
+}
+
+
+/* CONTACT BOX */
+
+.contact-box {
+  background: #ffffff;
+
+  border: 1.5px solid #f6c9da;
+
+  border-radius: 20px;
+
+  padding: 2.5rem 2.25rem;
+
+  box-shadow: 0 15px 40px rgba(224, 81, 140, 0.08);
+}
+
+
+.contact-detail {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.4rem;
+
+  padding: 1rem 0;
+}
+
+
+.contact-label {
+  font-family: "Fraunces", serif;
+
+  font-style: italic;
+
+  font-size: 0.95rem;
+
+  color: var(--rose);
+}
+
+
+.contact-detail strong {
+  font-size: 1.1rem;
+
+  font-weight: 500;
+
+  color: var(--ink);
+
+  word-break: break-word;
+}
+
+
+.contact-line {
+  border-top: 1px dashed #f6c9da;
+}
+
+
+/* BUTTON */
+
+.contact-order-btn {
+  width: 100%;
+
+  margin-top: 1.75rem;
+
+  padding: 1rem 1.5rem;
+
+  background: var(--rose);
+
+  color: #ffffff;
+
+  border: none;
+
+  border-radius: 999px;
+
+  font-family: "Work Sans", sans-serif;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.contact-order-btn:hover {
+  background: var(--rose-dark);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 760px) {
+
+  .about-section,
+  .contact-section {
+    padding: 4rem 6vw;
+  }
+
+
+  .about-wrapper {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+
+  .about-highlights {
+    flex-direction: column;
+
+    gap: 1.25rem;
+  }
+
+
+  .about-highlights > div {
+    border-right: none;
+
+    padding-right: 0;
+  }
+
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+
+    gap: 2.5rem;
+  }
+
+}

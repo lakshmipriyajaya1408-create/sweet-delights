@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff7f8;
+  color: #3d1f2b;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 8%;
+
+  background-color: white;
+
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #e75480;
+}
+
+/* Navigation Links */
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #3d1f2b;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e75480;
+}
+
+/* Buttons */
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.login-btn,
+.cart-btn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.login-btn {
+  background-color: #f5d6df;
+  color: #3d1f2b;
+}
+
+.login-btn:hover {
+  background-color: #eec0cf;
+}
+
+.cart-btn {
+  background-color: #e75480;
+  color: white;
+}
+
+.cart-btn:hover {
+  background-color: #c93f69;
+}
+
+/* ================= MAIN ================= */
+
+main {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+main h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 20px;
+  color: #666;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .login-btn {
+    display: none;
+  }
+}
